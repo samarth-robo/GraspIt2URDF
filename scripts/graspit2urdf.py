@@ -1,5 +1,5 @@
 """
-Converts a graspit model to DART
+Converts a graspit model to URDF
 """
 from lxml import etree as ET
 import os.path as osp
