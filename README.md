@@ -2,7 +2,10 @@
 Simple Python utility to convert hand model from GraspIt! to a ROS-compatible URDF. An example of the conversion of  `HumanHand20DOF.xml` from GraspIt! is included. 
 
 ## Quick demo
-Install the [urdf_tutorial](http://wiki.ros.org/urdf_tutorial) package, and then run `roslaunch urdf_tutorial display.launch model:=urdf/HumanHand20DOF.urdf` from the root of this repository. You should see GraspIt!'s 20-dof human hand model in Rviz, with sliders to manipulate the joints:
+- Install [GraspIt!](https://github.com/graspit-simulator/graspit_interface)
+- Install the [urdf_tutorial](http://wiki.ros.org/urdf_tutorial) ROS package
+- Run `python graspit2urdf.py --input_filename ${GRASPIT}/models/robots/HumanHand/HumanHand20DOF.xml` from the `scripts` directory. This will produce a URDF file for the 20-dof Human Hand from GraspIt! in the `urdf` directory.
+- Run `roslaunch urdf_tutorial display.launch model:=urdf/HumanHand20DOF.urdf` from the root of this repository. You should see GraspIt!'s 20-dof human hand model in Rviz, with sliders to manipulate the joints:
 ![human-hand-example](human_hand_example.png)
 
 ## Converting a GraspIt! hand to URDF
