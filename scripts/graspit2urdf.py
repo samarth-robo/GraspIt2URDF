@@ -27,7 +27,8 @@ def T2xyzrpy(T):
 def convert(input_filename, data_dir, output_dir):
   """
   :param input_filename: input GraspIt! XML file
-  :param output_filename: output XML filename for DART format file
+  :param data_dir: Directory containing the STL meshes and data files for links (see README.md)
+  :param output_dir: Directory where output URDF file is saved
   :return:
   """
   graspit_data_dir, robot_name = osp.split(input_filename)
